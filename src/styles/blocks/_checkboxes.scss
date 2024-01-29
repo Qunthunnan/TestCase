@@ -1,0 +1,19 @@
+.radio {
+    input {
+        display: none;
+    }
+    
+    span {
+        position: relative;
+        height: 16px;
+        width: 16px;
+        border-radius: 3px;
+        border: 1px solid black;
+        display: inline-block;
+        margin: 0 16px 0 0;
+    }
+
+    input:checked + span {
+        background-color: #fcba1d;
+    }
+} 

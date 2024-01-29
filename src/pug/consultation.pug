@@ -1,0 +1,79 @@
+section.consultation
+    .consultation__wrapper.row
+        .consultation__side_img.col-2
+
+        .consultation__questions.col-6
+            h1.title.title--form Рассчитать стоимость ремонта квартиры за 1 минуту 
+            .consultation__track
+                .consultation__form_block.consultation__form_block--active 
+                    .consultation__form_section 
+                        h2.title.title--form Вид ремонта:
+                        label(for="capital").radio
+                            input(type="radio" value="" name="repair-type" id="capital")
+                            span
+                            label(for="capital").consultation__option Капитальный ремонт
+                        label(for="full").radio 
+                            input(type="radio" value="" name="repair-type" id="full")
+                            span
+                            label(for="full").consultation__option Ремонт под ключ
+                        label(for="premium").radio
+                            input(type="radio" value="" name="repair-type" id="premium")
+                            span
+                            label(for="premium").consultation__option Ремонт премиум класс
+                    .consultation__form_section 
+                        h2.title.title--form  Тип недвижимости:
+                        label(for="new").radio
+                            input(type="radio" value="" name="apartment-type" id="new")
+                            span
+                            label(for="new").consultation__option Новостройка
+                        label(for="used").radio
+                            input(type="radio" value="" name="apartment-type" id="used")
+                            span
+                            label(for="used").consultation__option Вторичка
+                    .consultation__form_section 
+                        h2.title.title--form  Укажите площадь: 
+                        input(type="range" name="square" id="square")
+                        label(for="squart") м
+                            sup 2
+
+                .consultation__form_block
+                    .consultation__form_section 
+                        h2.title.title--form  Выберите удобный формат консультации
+                        label(for="phone").radio
+                            input(type="radio" value="phone" name="contact_type" id="phone")
+                            span
+                            label(for="phone") Проконсультируйте по телефону
+                        label(for="viber").radio
+                            input(type="radio" value="viber" name="contact_type" id="viber")
+                            span
+                            label(for="viber") Вайбер
+                        label(for="office").radio
+                            input(type="radio" value="office" name="contact_type" id="office")
+                            span
+                            label(for="office") Видеозвонок/Встреча в офисе
+                    .consultation__form_section 
+                        input(type="text" placeholder="Ваше имя" id="name" name="name")
+                        label(for="name") 
+                        input(type="number" placeholder="Ваш телефон" id="phone" name="phone")
+                        label(for="phone") 
+                        input(type="comment" placeholder="Комментарий" id="comment" name="comment")
+                        label(for="comment") 
+                    .consultation__form_section 
+                        a.link--form &#x2190; Вернуться к предыдущему вопросу
+
+        .consultation__panel.col-4
+            .consultation__panel_section
+                h2.title.title--panel Сроки: 
+                h3.title.title--panel от 10 до 12 дней
+            .consultation__panel_section
+                h2.title.title--panel Стоимость: 
+                h3.title.title--panel от $3000
+            .consultation__panel_section
+                button.consultation__submit Получить консультацию &#x2192; 
+
+
+
+
+                            
+
+
