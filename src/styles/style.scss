@@ -2,6 +2,7 @@
 // @import '~bootstrap/dist/css/bootstrap-reboot.min.css';
 @import 'blocks/titles';
 @import 'blocks/checkboxes';
+@import 'blocks/ranges';
 
 * {
     margin:0; 
@@ -34,7 +35,7 @@ body {
         background: url('@/images/apartment.jpg') center/cover no-repeat;
     }
     &__questions {
-        padding: 65px 45px 43px 45px;
+        padding: 65px 35px 19px 59px;
         background-color: #faf8f3;
         display: flex;
         flex-direction: column;
@@ -51,12 +52,16 @@ body {
             display: flex;
         }
     }
-    &__option {
-        margin: 0 40px 0 0;
+    &__answers {
+        margin: 19px 0 0 0;
     }
 
     &__form_section {
         flex-basis: content;
+    }
+    &__range_wrapper {
+        margin: 34px 0 0 0;
+        position: relative;
     }
 
     &__option {

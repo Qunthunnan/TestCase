@@ -8,33 +8,37 @@ section.consultation
                 .consultation__form_block.consultation__form_block--active 
                     .consultation__form_section 
                         h2.title.title--form Вид ремонта:
-                        label(for="capital").radio
-                            input(type="radio" value="" name="repair-type" id="capital")
-                            span
-                            label(for="capital").consultation__option Капитальный ремонт
-                        label(for="full").radio 
-                            input(type="radio" value="" name="repair-type" id="full")
-                            span
-                            label(for="full").consultation__option Ремонт под ключ
-                        label(for="premium").radio
-                            input(type="radio" value="" name="repair-type" id="premium")
-                            span
-                            label(for="premium").consultation__option Ремонт премиум класс
+                        .consultation__answers
+                            label(for="capital").radio
+                                input(type="radio" value="" name="repair-type" id="capital")
+                                span
+                                label(for="capital").consultation__option Капитальный ремонт
+                            label(for="full").radio 
+                                input(type="radio" value="" name="repair-type" id="full")
+                                span
+                                label(for="full").consultation__option Ремонт под ключ
+                            label(for="premium").radio
+                                input(type="radio" value="" name="repair-type" id="premium")
+                                span
+                                label(for="premium").consultation__option Ремонт премиум класс
                     .consultation__form_section 
                         h2.title.title--form  Тип недвижимости:
-                        label(for="new").radio
-                            input(type="radio" value="" name="apartment-type" id="new")
-                            span
-                            label(for="new").consultation__option Новостройка
-                        label(for="used").radio
-                            input(type="radio" value="" name="apartment-type" id="used")
-                            span
-                            label(for="used").consultation__option Вторичка
+                        .consultation__answers
+                            label(for="new").radio
+                                input(type="radio" value="" name="apartment-type" id="new")
+                                span
+                                label(for="new").consultation__option Новостройка
+                            label(for="used").radio
+                                input(type="radio" value="" name="apartment-type" id="used")
+                                span
+                                label(for="used").consultation__option Вторичка
                     .consultation__form_section 
                         h2.title.title--form  Укажите площадь: 
-                        input(type="range" name="square" id="square")
-                        label(for="squart") м
-                            sup 2
+                        .consultation__answers
+                        .consultation__range_wrapper.jsRangeWrapper
+                            input(type="range" name="square" id="square" min="15" max="140" value="77").range.range--square.jsRangeInput
+                            label(for="square").jsRangeLabel 30 м
+                                sup 2
 
                 .consultation__form_block
                     .consultation__form_section 
@@ -59,7 +63,7 @@ section.consultation
                         input(type="comment" placeholder="Комментарий" id="comment" name="comment")
                         label(for="comment") 
                     .consultation__form_section 
-                        a.link--form &#x2190; Вернуться к предыдущему вопросу
+                        a.link--form ⟵ Вернуться к предыдущему вопросу
 
         .consultation__panel.col-4
             .consultation__panel_section
@@ -69,7 +73,7 @@ section.consultation
                 h2.title.title--panel Стоимость: 
                 h3.title.title--panel от $3000
             .consultation__panel_section
-                button.consultation__submit Получить консультацию &#x2192; 
+                button.consultation__submit Получить консультацию ⟶
 
 
 

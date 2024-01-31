@@ -1,0 +1,32 @@
+.range {
+    appearance: none;
+    background: #000;    
+    cursor: pointer;
+    height: 0.5px;
+    width: 510px;
+    &::-webkit-slider-thumb {
+        border: none;
+        appearance: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        background: #fcba1d;
+        cursor: pointer;
+    }
+    &::-moz-range-thumb {
+        border: none;
+        appearance: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        background: #fcba1d;
+        cursor: pointer;
+    }
+}
+
+label[for="square"] {
+    position: absolute;
+    top: -18px;
+    left: 1px;
+    font-size: 18px;
+}
